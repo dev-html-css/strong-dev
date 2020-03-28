@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+
+body div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: #031321;
+}
+
+body div a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #219;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body div a:hover {
+  color: #255784;
+  background: #2196f3;
+  -webkit-box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+          box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
+
+body div a:hover span:nth-child(1) {
+  left: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body div a:hover span:nth-child(2) {
+  top: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.25;
+          transition-delay: 0.25;
+}
+
+body div a:hover span:nth-child(3) {
+  right: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+body div a:hover span:nth-child(4) {
+  bottom: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+body div a span {
+  display: block;
+  position: absolute;
+}
+
+body div a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(#2196f3));
+  background-image: linear-gradient(90deg, transparent, #2196f3);
+}
+
+body div a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#2196f3));
+  background-image: linear-gradient(180deg, transparent, #2196f3);
+}
+
+body div a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), to(#2196f3));
+  background-image: linear-gradient(270deg, transparent, #2196f3);
+}
+
+body div a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#2196f3));
+  background-image: linear-gradient(360deg, transparent, #2196f3);
+}
+/*# sourceMappingURL=style.css.map */
